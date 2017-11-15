@@ -5,15 +5,25 @@ Localization algorithms play a significant role in determining the accuracy in s
   *Python 2.7, TensorFlow 1.1.0, and Matlab 2013a*
 
 ## Structure
-  - CNN
+  - **CNN (including both training and validation phases)
+  
+	- Single_Symmetric
 	
-	-Single_Symmetric
+	- quickPALM
 	
-	-quickPALM
+	- Double_Symmetric
 	
-	-Double_Symmetric
+	- Single_Asymmetric
 	
-	-Single_Asymmetric
+  - **Localization (including 6 conventional centroid localization algorithms： RS, GNLLS, GMLE, Centroid, WLG, FluoroBancroft)
+  
+	- Single_Symmetric
+	
+	- quickPALM
+	
+	- Double_Symmetric
+	
+	- Single_Asymmetric
 
 Give examples
 Installing
