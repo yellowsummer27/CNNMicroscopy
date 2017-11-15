@@ -1,6 +1,5 @@
 # CNNMicroscopy
 Convolutional Neural Networks based Super-resolution Microscopy
----------------------------------------------------------------
 
 One Paragraph of project description goes here
 
