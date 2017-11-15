@@ -6,10 +6,14 @@ Localization algorithms play a significant role in determining the accuracy in s
 
 ## Structure
   - CNN
-    -Single_Symmetric
-    -quickPALM
-    -Double_Symmetric
-    -Single_Asymmetric
+	
+	-Single_Symmetric
+	
+	-quickPALM
+	
+	-Double_Symmetric
+	
+	-Single_Asymmetric
 
 Give examples
 Installing
