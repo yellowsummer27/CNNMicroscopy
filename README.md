@@ -5,7 +5,7 @@ Localization algorithms play a significant role in determining the accuracy in s
   *Python 2.7, TensorFlow 1.1.0, and Matlab 2013a*
 
 ## Structure
-  - CNN (including both training and validation phases)
+  - CNN (including both training and testing phases)
   
 	- Single_Symmetric
 	
@@ -15,7 +15,7 @@ Localization algorithms play a significant role in determining the accuracy in s
 	
 	- Single_Asymmetric
 	
-  - Localization (including 6 conventional centroid localization algorithms： RS, GNLLS, GMLE, Centroid, WLG, FluoroBancroft)
+  - Localization (including RS, GNLLS, GMLE, Centroid, WLG, and FluoroBancroft)
   
 	- Single_Symmetric
 	
@@ -24,6 +24,8 @@ Localization algorithms play a significant role in determining the accuracy in s
 	- Double_Symmetric
 	
 	- Single_Asymmetric
+
+## Run CNN
 
 Give examples
 Installing
