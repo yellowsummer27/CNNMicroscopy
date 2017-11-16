@@ -35,8 +35,10 @@ Localization algorithms play a significant role in determining the accuracy in s
 
 ## Run CNN
 ### Training
-Go to **.../CNN/xxx** (xxx is Single_Symmetric or Single_Asymmetric), right click mouse and select **Open in Terminal**. Type **python CNN.py**. The latest 5 epochs of training parameters will be saved in **.../CNN/xxx/logs**. Please note that Single_Symmetric, quickPALM, and Double_Symmetric PSFS share the same CNN model. So train the CNN model in **.../CNN/Single_Symmetric** first, copy logs file from **.../CNN/Single_Symmetric/logs** to **.../CNN/quickPALM** or **.../CNN/Double_Symmetric** and then implement corresponding validation/testing.
+Go to **.../CNN/xxx** (xxx is Single_Symmetric or Single_Asymmetric), open **CNN.py**, and change **data_dir** to your local directory emphasized by ####. Then right click mouse and select **Open in Terminal**. Type **python CNN.py** and press **ENTER**. The training phase will be started and the latest 5 epochs of training parameters will be saved in **.../CNN/xxx/logs**. Please note that Single_Symmetric, quickPALM, and Double_Symmetric PSFS share the same CNN model. So train the CNN model in **.../CNN/Single_Symmetric** first, copy logs file from **.../CNN/Single_Symmetric/logs** to **.../CNN/quickPALM** or **.../CNN/Double_Symmetric** and then implement corresponding validation/testing.
 ### Validation
 Once the training phase is completed (~500 epoches). In the same terminal, type **python CNN.py --mode validate** and all CNN processed PSFs images will be saved in **.../CNN/xxx/CNN_Processed**. 
 
+## Run Centroid Localization Algorithms
+Go to **.../Localization/xxx** (xxx is Single_Symmetric, quickPALM, Double_Symmetric, or Single_Asymmetric), open **Centroid_Localization.m**, and change **Data_root** to your local directory emphasized by %%%%. Then press **F5** to run 6 localization algorithms for original and CNN processed images serially. The localization result will be saved in **centroid_localization.mat**. 
 
