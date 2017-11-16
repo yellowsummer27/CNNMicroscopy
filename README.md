@@ -8,7 +8,7 @@ Localization algorithms play a significant role in determining the accuracy in s
   
   - TensorFlow 1.1.0
   
-  - Matlab 2013a
+  - MATLAB 2013a
 
 ## Structure
   - CNN (including both training and validation phases)
@@ -41,4 +41,14 @@ Once the training phase is completed (~500 epoches). In the same terminal, type 
 
 ## Run Centroid Localization Algorithms
 Go to **.../Localization/xxx** (xxx is Single_Symmetric, quickPALM, Double_Symmetric, or Single_Asymmetric), open **Centroid_Localization.m**, and change **Data_root** to your local directory emphasized by %%%%. Then press **F5** to run 6 localization algorithms for original and CNN processed images serially. The localization result will be saved in **centroid_localization.mat**. 
+
+## Authors
+  - Xia Huang (Ph.D. candidate, Department of Metallurgical, Materials, and Biomedical Engineering, The University of Texas at El Paso)
+  
+  - Wei Qian (Professor, Department of Electrical and Computer Engineering, The University of Texas at El Paso)
+  
+  - Chunqiang Li (Associate Professor, Department of Physics, The University of Texas at El Paso)
+  
+## Acknowledgements
+We thank Raghuveer Parthasarathy who implemented particle centroid localization algorithms mentioned above (https://www.nature.com/articles/nmeth.2071), Abraham, A.V. et al. for making easy-to-use software **FandPLimit** available for calculating theoretical limit (http://www.wardoberlab.com/software/fandplimittool/), and developers of Python, TensorFlow, and MATLAB. 
 
