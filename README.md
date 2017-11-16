@@ -11,7 +11,7 @@ Localization algorithms play a significant role in determining the accuracy in s
   - Matlab 2013a
 
 ## Structure
-  - CNN (including both training and testing phases)
+  - CNN (including both training and validation phases)
   
 	- Single_Symmetric
 	
@@ -21,7 +21,7 @@ Localization algorithms play a significant role in determining the accuracy in s
 	
 	- Single_Asymmetric
 	
-  - Localization (including RS, GNLLS, GMLE, Centroid, WLG, and FluoroBancroft)
+  - Localization (including **RS**, **GNLLS**, **GMLE**, **Centroid**, **WLG**, and **FluoroBancroft**)
   
 	- Single_Symmetric
 	
@@ -30,7 +30,13 @@ Localization algorithms play a significant role in determining the accuracy in s
 	- Double_Symmetric
 	
 	- Single_Asymmetric
+	
+  (**RS**: radial symmetry fitting; **GNLLS**: Gaussian fitting via nonlinear least squares; **GMLE**: Gaussian fitting via maximum likelihood estimation; **Centroid**: Geometric centroid calculation; **WLG**: weighted linearized Gaussian fitting; **FluoroBancroft**: FluoroBancroft fitting.)
 
 ## Run CNN
 ### Training
-Go to .../CNN/xxx (xxx is Single_Symmetric or Single_Asymmetric), right click mouse and select "open in terminal". Type python CNN.py. The latest 5 epochs of training parameters will be saved in .../CNN/xxx/logs.
+Go to **.../CNN/xxx** (xxx is Single_Symmetric or Single_Asymmetric), right click mouse and select **Open in Terminal**. Type **python CNN.py**. The latest 5 epochs of training parameters will be saved in **.../CNN/xxx/logs**. Please note that Single_Symmetric, quickPALM, and Double_Symmetric PSFS share the same CNN model. So train the CNN model in **.../CNN/Single_Symmetric** first, copy logs file from **.../CNN/Single_Symmetric/logs** to **.../CNN/quickPALM** or **.../CNN/Double_Symmetric** and then implement corresponding validation/testing.
+### Validation
+Once the training phase is completed (~500 epoches). In the same terminal, type **python CNN.py --mode validate** and all CNN processed PSFs images will be saved in **.../CNN/xxx/CNN_Processed**. 
+
+
